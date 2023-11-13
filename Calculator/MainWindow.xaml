@@ -7,23 +7,23 @@
         mc:Ignorable="d"
         Title="Calculator" Height="450" Width="800">
     <Grid Background="DimGray">
-        <TextBox x:Name="Result" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="314" Height="58" Margin="235,42,0,0"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="235,118,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="317,118,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="399,118,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button x:Name="Divide" Content="/" HorizontalAlignment="Left" Margin="481,118,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Divide_Click"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="235,197,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="317,197,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="399,197,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button x:Name="Multiply" Content="*" HorizontalAlignment="Left" Margin="481,197,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Multiply_Click"/>
-        <Button Content="1" HorizontalAlignment="Left" Margin="235,277,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="317,277,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="399,277,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button x:Name="Subtract" Content="-" HorizontalAlignment="Left" Margin="481,277,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Subtract_Click"/>
-        <Button x:Name="Equal" Content="=" HorizontalAlignment="Left" Margin="235,356,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Equal_Click"/>
-        <Button Content="0" HorizontalAlignment="Left" Margin="317,356,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click"/>
-        <Button x:Name="Clear" Content="CE" HorizontalAlignment="Left" Margin="399,356,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Clear_Click"/>
-        <Button x:Name="Add" Content="+" HorizontalAlignment="Left" Margin="481,356,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Add_Click"/>
+        <TextBox x:Name="Result" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="314" Height="58" Margin="235,42,0,0" FontFamily="Courier New" FontSize="24" TextAlignment="Right"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="235,118,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="317,118,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="399,118,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button x:Name="Divide" Content="/" HorizontalAlignment="Left" Margin="481,118,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Divide_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="235,197,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="317,197,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="399,197,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button x:Name="Multiply" Content="*" HorizontalAlignment="Left" Margin="481,197,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Multiply_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="235,277,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="317,277,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="399,277,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button x:Name="Subtract" Content="-" HorizontalAlignment="Left" Margin="481,277,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Subtract_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button x:Name="Equal" Content="=" HorizontalAlignment="Left" Margin="235,356,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Equal_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="317,356,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Button_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button x:Name="Clear" Content="CE" HorizontalAlignment="Left" Margin="399,356,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Clear_Click" FontFamily="Courier New" FontSize="24"/>
+        <Button x:Name="Add" Content="+" HorizontalAlignment="Left" Margin="481,356,0,0" VerticalAlignment="Top" Height="68" Width="68" Click="Add_Click" FontFamily="Courier New" FontSize="24"/>
 
 
     </Grid>

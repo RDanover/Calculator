@@ -33,12 +33,20 @@ namespace Calculator
         {
             Button btn = (Button)sender;
             Result.Text += btn.Content.ToString();
-            second = Int32.Parse(Result.Text);
+            int secondint;
+            if(Int32.TryParse(Result.Text, out secondint))
+            {
+                second = secondint;
+            }
         }
 
         private void Equal_Click(object sender, RoutedEventArgs e)
         {
-            second = Int32.Parse(Result.Text);
+            int secondint;
+            if (Int32.TryParse(Result.Text, out secondint))
+            {
+                second = secondint;
+            }
             int result = 0;
             if (op == '+')
             {
@@ -73,28 +81,44 @@ namespace Calculator
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            first = Int32.Parse(Result.Text);
+            int firstint;
+            if (Int32.TryParse(Result.Text, out firstint))
+            {
+                first = firstint;
+            }
             op = '+';
             Result.Clear();
         }
 
         private void Subtract_Click(object sender, RoutedEventArgs e)
         {
-            first = Int32.Parse(Result.Text);
+            int firstint;
+            if (Int32.TryParse(Result.Text, out firstint))
+            {
+                first = firstint;
+            }
             op = '-';
             Result.Clear();
         }
 
         private void Multiply_Click(object sender, RoutedEventArgs e)
         {
-            first = Int32.Parse(Result.Text);
+            int firstint;
+            if (Int32.TryParse(Result.Text, out firstint))
+            {
+                first = firstint;
+            }
             op = '*';
             Result.Clear();
         }
 
         private void Divide_Click(object sender, RoutedEventArgs e)
         {
-            first = Int32.Parse(Result.Text);
+            int firstint;
+            if (Int32.TryParse(Result.Text, out firstint))
+            {
+                first = firstint;
+            }
             op = '/';
             Result.Clear();
         }
