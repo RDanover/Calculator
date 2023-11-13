@@ -48,22 +48,30 @@ namespace Calculator
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-
+            first = Int32.Parse(Result.Text);
+            op = '+';
+            Result.Clear();
         }
 
         private void Subtract_Click(object sender, RoutedEventArgs e)
         {
-
+            first = Int32.Parse(Result.Text);
+            op = '-';
+            Result.Clear();
         }
 
         private void Multiply_Click(object sender, RoutedEventArgs e)
         {
-
+            first = Int32.Parse(Result.Text);
+            op = '*';
+            Result.Clear();
         }
 
         private void Divide_Click(object sender, RoutedEventArgs e)
         {
-
+            first = Int32.Parse(Result.Text);
+            op = '/';
+            Result.Clear();
         }
     }
 }
