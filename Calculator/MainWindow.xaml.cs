@@ -20,8 +20,8 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
-        int first;
-        int second;
+        int first = 0;
+        int second = 0;
 
         char op;
         public MainWindow()
@@ -38,12 +38,37 @@ namespace Calculator
 
         private void Equal_Click(object sender, RoutedEventArgs e)
         {
-
+            second = Int32.Parse(Result.Text);
+            int result = 0;
+            if (op == '+')
+            {
+                result = first + second;
+            }
+            else if(op == '-')
+            {
+                result = first - second;
+            }
+            else if(op == '*')
+            {
+                result = first * second;
+            }
+            else if (op == '/')
+            {
+                result = first / second;
+            }
+            if (Result.Text == "0")
+            {
+                Result.Clear();
+            }
+            Result.Text = result.ToString();
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-
+            Result.Clear();
+            op = ' ';
+            first = 0;
+            second = 0;
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
