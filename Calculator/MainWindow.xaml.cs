@@ -62,7 +62,15 @@ namespace Calculator
             }
             else if (op == '/')
             {
-                result = first / second;
+                if (second != 0)
+                {
+                    result = first / second;
+                }
+                else
+                {
+                    Result.Text = "ERR";
+                    return;
+                }
             }
             if (Result.Text == "0")
             {
