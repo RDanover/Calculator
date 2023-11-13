@@ -20,6 +20,10 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        int first;
+        int second;
+
+        char op;
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +31,9 @@ namespace Calculator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Button btn = (Button)sender;
+            Result.Text += btn.Content.ToString();
+            second = Int32.Parse(Result.Text);
         }
 
         private void Equal_Click(object sender, RoutedEventArgs e)
